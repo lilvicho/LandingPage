@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio-registrar.css">
+    <link rel="icon" href="imagenes/UM-Logo.png">
+    <title>Inicio de Sesión</title>
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); // Prevenir el envío del formulario
+
+            // Obtener los valores de usuario y contraseña
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Verificar si los valores son "admin"
+            if (username === "admin" && password === "admin") {
+                window.location.href = "carrito_compras/admin/admin.html"; // Redirigir a otra página
+            } else {
+                window.location.href = "carrito_compras/user/index.html"
+            }
+        }
+    </script>
+</head>
+<body>
+    <section class="form-main">
+        <div class="form-content">
+            <div class="box">
+                <h3>Bienvenido</h3>
+                <form action="" onsubmit="validateForm(event)">
+                    <div class="input-box">
+                        <input type="text" placeholder="Nombre de Usuario" id="username" class="input-control">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" id="password" class="input-control">
+                        <div class="input-link">
+                            <a href="recuperar.html" class="text-">Has olvidado tu contraseña</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Iniciar Sesión</button>
+                </form>
+                <p>No tienes una cuenta? <a href="registro.html" class="text-">Registrate</a></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

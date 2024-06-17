@@ -1,0 +1,518 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imagenes/UM-campeon\ -\ copia.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        color: #FFFDFC;
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .logo img {
+        width: 90px;
+        padding: 10px;
+    }
+
+    .menu .navbar ul li {
+        position: relative;
+        float: left;
+    }
+
+    .menu .navbar ul li a {
+        font-size: 18px;
+        padding: 20px;
+        color: #FFFDFC;
+        display: block;
+        font-weight: 800;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #c9a454;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .menu-icono {
+        width: 25px;
+    }
+
+    .menu label {
+        cursor: pointer;
+        display: none;
+    }
+
+    .header-content {
+        text-align: center;
+    }
+
+    .header-content h1 {
+        font-size: 75px;
+        line-height: 80px;
+        color: #c9a454;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+
+    .header-content p {
+        font-size: 16px;
+        color: #C5C5C5;
+        padding: 0 250px;
+        margin-bottom: 25px;
+    }
+
+
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #c9a454;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+    .btn-1:hover {
+        background-color: #872547;
+    }
+
+.btn-2 {
+        display: inline-block;
+        padding: 11px 35px;
+        background-color: #872547;
+        color: #F9FAFC;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    
+        .btn-2:hover {
+            background-color: #c9a454;
+        }
+
+
+
+.mostoles {
+    padding: 100px 0;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imagenes/UM-fondo-black.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+    .mostoles-content {
+        text-align: center;
+    }
+
+    .mostoles-content h2 {
+        font-size: 55px;
+        line-height: 70px;
+        color: #c9a454;
+        text-transform: uppercase;
+        padding: 0 250px;
+        margin-bottom: 40px;
+    }
+
+    .txt-p {
+        font-size: 15px;
+        color: #C5C5C5;
+        padding: 0 250px;
+        margin-bottom: 35px;
+    }
+
+    .mostoles-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .mostoles-1 {
+        padding: 25px;
+    }
+
+    .mostoles-1 img {
+        width: 240px;
+    }
+
+    .mostoles-img-1 {
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+
+    .mostoles-img-2 {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+
+    .mostoles-1 h3 {
+        color: #c9a454;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .mostoles-1 p {
+        color: #C5C5C5;
+    }
+
+
+
+.hitos {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(imagenes/UM-kings-cup-malaga\ -\ copia.jpg);
+    background-position: center center;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+    .hitos-content {
+        text-align: center;
+    }
+
+    .hitos-content h2 {
+        font-size: 55px;
+        line-height: 70px;
+        color: #c9a454;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    .hitos-content p {
+        font-size: 16px;
+        color: #C5C5C5;
+        margin-bottom: 50px;
+        padding: 0 100px;
+    }
+
+
+
+.splits {
+    display: flex;
+}
+
+    .splits-1 {
+        width: 50%;
+        padding: 100px 250px 100px 100px;
+        background-color: #c9a454;
+    }
+
+    .splits-22 {
+        width: 50%;
+        padding: 100px 250px 100px 100px;
+        background-color: #872547;
+    }
+
+    .splits-1 h2 {
+        color: #000;
+    }
+
+    .splits-1 p {
+        color: #FFFDFC;
+    }
+
+    .splits-2 {
+        background-image: url(imagenes/UM-campeon.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+    }
+
+    .splits-3 {
+        background-image: url(imagenes/UM-ambos-equipos.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+    }
+
+    .splits-4 {
+        background-image: url(imagenes/UM-kings-cup-equipo.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+    }
+
+    .splits-5 {
+        background-image: url(imagenes/UM-segundo-equipo-f.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+    }
+
+
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #c9a454;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #C5C5C5;
+    margin: 25px 45px 45px 45px;
+}
+
+
+
+.blog {
+    padding: 100px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(imagenes/UM-fondo-black.jpg);
+    background-position: center center;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+    .blog-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blog-1 {
+        padding: 15px 55px;
+    }
+
+    .blog-1 img {
+        width: 250px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+
+    .blog-1 h3 {
+        font-size: 25px;
+        color: #c9a454;
+    }
+
+form {
+    display: block;
+}
+
+    .form-content h3 {
+        padding-top: 40px;
+        font-size: 25px;
+        color: #c9a454;
+    }
+    
+    .campo {
+        padding: 17px 35px;
+        background-color: #872547;
+        border-radius: 25px;
+        margin-right: 15px;
+        border: 3px solid #c9a454;
+        outline: none;
+        color: #F9FAFC;
+    }
+
+    .campo::placeholder {
+        color: #F9FAFC;
+    }
+
+
+
+.footer {
+    padding: 100px 0;
+    background-color: #872547;
+}
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+.link h3 {
+    font-size: 18px;
+    color: #FFFDFC;
+    margin-bottom: 15px;
+}
+
+    .link a {
+        font-size: 16px;
+        color: #c9a454;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+
+@media(max-width:991px){
+
+    .menu {
+        padding: 30px;
+    }
+
+        .menu label {
+            display: initial;
+        }
+
+        .menu .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #872547;
+            display: none;
+        }
+
+        .menu .navbar ul li {
+            width: 100%;
+        }
+
+        #menu:checked ~ .navbar {
+            display: initial;
+        }
+
+        .header {
+            min-height: 0vh;
+        }
+
+        .header-content {
+            padding: 120px 30px;
+        }
+
+        .header-content h1 {
+            font-size: 60px;
+        }
+
+        .header-content p {
+            padding: 0;
+        }
+
+
+
+    .mostoles {
+        padding: 30px;
+    }
+
+        .mostoles-content h2 {
+            padding: 0;
+            font-size: 45px;
+        }
+
+        .txt-p {
+            padding: 0;
+        }
+
+        .mostoles-group {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+
+        .mostoles-img-1 {
+            display: none;
+        }
+
+        .mostoles-img-2 {
+            display: none;
+        }
+
+
+
+    .hitos {
+        padding: 30px;
+    }
+
+        .hitos-content h2 {
+            font-size: 45px;
+        }
+
+        .hitos-content p {
+            padding: 0;
+        }
+
+        .splits {
+            flex-direction: column;
+        }
+
+        .splits-1, .splits-22 {
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .splits-2, .splits-3, .splits-4, .splits-5 {
+            display: none;
+        }
+
+
+
+    .blog {
+        padding: 30px;
+    }
+
+        .blog h2 {
+            font-size: 45px;
+        }
+
+        .blog-content {
+            flex-direction: column;
+        }
+
+        .blog-1 {
+            padding: 0;
+        }
+    
+        .form-content h2 {
+            font-size: 40px;
+        }
+        .campo {
+            margin-bottom: 20px;
+        }
+
+
+    .footer {
+        padding: 30px;
+    }
+
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+}

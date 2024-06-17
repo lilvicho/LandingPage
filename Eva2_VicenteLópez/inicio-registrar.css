@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imagenes/UM-Fondo.jpg);
+    color: #C5C5C5;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.text- {
+    color: #c9a454;
+}
+
+.form-main {
+    min-height: 100vh;
+    padding: 60px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.form-content {
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-content .box {
+    border-color: #c9a454;
+    border: 3px solid #872547;
+    padding: 40px 50px;
+    border-radius: 20px;
+    background-color: #000;
+}
+
+
+.form-content h3 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.2;
+    color: #c9a454;
+    font-weight: 500;
+}
+
+.form-content form {
+    margin: 25px 0 20px;
+}
+
+.form-content ::placeholder {
+    color: inherit;
+    opacity: 1;
+}
+
+.form-content .input-box {
+    margin: 25px;
+}
+
+.form-content .input-control {
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #C5C5C5;
+    color: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.form-content .input-link {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.form-content .btn {
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: #872547;
+    color: #c9a454;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-content p {
+    text-align: center;
+}
+
+@media(min-width:575px){
+    body::after,
+    bod::before {
+        height: 250px;
+        width: 250px;
+    }
+
+    .form-content .box {
+        padding: 30px;
+    }
+
+    .form-content h3 {
+        font-size: 24px;
+    }
+} 

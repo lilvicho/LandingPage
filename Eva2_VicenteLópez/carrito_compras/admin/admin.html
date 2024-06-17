@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda UM ADMIN</title>
+
+    <link rel="stylesheet" href="admin.css">
+    <link rel="icon" href="../../imagenes/UM-Logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <a href="../../index.html" class="logo"><img src="../../imagenes/UM-Logo2.avif" alt=""></a>
+        <h1>Tienda Ultimate Mostoles</h1>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="añadir">
+                <h2>Agregar Producto</h2>
+                <form>
+                    <label>Nombre del producto</label>
+                    <input type="text" id="productoAñadir" name="nombreDelProducto">
+
+                    <label>Valor del producto</label>
+                    <input type="number" id="valorAñadir">
+
+                    <label>Existencia</label>
+                    <input type="number" id="existenciaAñadir">
+
+                    <label>Url Imagen</label>
+                    <input type="text" id="ImagenAñadir">
+
+                    <input class="button" type="button" id="botonAñadir" value="Añadir">
+                </form>
+            </div>
+            <div class="editar">
+                <h2>Editar Producto</h2>
+                <form>
+                    <label>Nombre del producto</label>
+                    <select id="productoEditar">
+                        <option value="">---</option>
+                    </select>
+
+                    <label>Atributo</label>
+                    <select id="atributoEditar">
+                        <option value="">---</option>
+                    </select>
+
+                    <label>Nuevo valor</label>
+                    <input type="text" id="nuevoAtributo">
+
+                    <input class="button" type="button" id="botonEditar" value="Editar">
+                </form>
+            </div>
+
+            <div class="eliminar">
+                <h2>Eliminar Producto</h2>
+
+                <form>
+                    <label>Nombre del producto</label>
+                    <select id="productoEliminar">
+                        <option value="">---</option>
+                    </select>
+                    <input class="button" type="button" id="botonEliminar" value="Eliminar">
+                </form>
+            </div>
+        </div>
+
+        <div class="contenedorMensaje">
+            <div id="mensaje"></div>
+        </div>
+
+        <div class="contenedorProductos">
+            <h2>Productos</h2>
+            <div class="mostrarProductos" id="mostrarProductos">
+
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
